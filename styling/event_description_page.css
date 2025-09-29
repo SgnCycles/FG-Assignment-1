@@ -1,7 +1,7 @@
 .event-main-content {
     align-items: center;
     backdrop-filter: blur(4px);
-    color: #383636;
+    color: var( --website-color-grey);
     display: flex;
     flex-grow: 1;
     justify-content: center;
@@ -35,14 +35,14 @@
 
 .event-header {
     align-items: center;
-    background-color: var(--main-font-color);
-    grid-area: event-name;
+    background-color: var(--website-color-beige);
     display: flex;
+    grid-area: event-name;
     justify-content: center;
 }
 
 .event-description {
-    background-color: var(--main-font-color);
+    background-color: var(--website-color-beige);
     grid-area: description;
     padding: 0 5px;
 }
@@ -66,7 +66,7 @@ span {
 
 .event-time, .event-location, .event-entry {
     align-items: right;
-    background-color: var(--main-font-color);
+    background-color: var(--website-color-beige);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -83,7 +83,7 @@ span {
 
 .read-more {
     align-items: center;
-    background-color: var(--main-font-color);
+    background-color: var(--website-color-beige);
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -92,19 +92,20 @@ span {
 }
 
 .read-more a{
-    background-color: #bd4e84;
+    background-color: var(--website-color-pink);
     border-radius: 30px;
-    color: var(--main-font-color);
+    color: var(--website-color-beige);
     padding: 10px 20px;
     text-decoration: none;
 }
 
 .read-more a:hover{
     background-color: #2B2020;
-    color: var(--main-font-color);
+    color: var(--website-color-beige);
 }
 
 @media (min-width: 340px) and (max-width: 1024px) {
+
     .event-grid-container {
         display: flex;
         flex-direction: column;
@@ -119,8 +120,8 @@ span {
     }
 
     .event-time, .event-location, .event-entry {
-        padding-left: 11px;
         padding-bottom: 10px;
+        padding-left: 11px;
     }
 
     .event-description p {

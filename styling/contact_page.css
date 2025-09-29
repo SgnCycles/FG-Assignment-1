@@ -1,8 +1,4 @@
 .main-content-contact {
-    backdrop-filter: blur(8px);
-}
-
-.main-content-contact {
     align-items: center;
     display: flex;
     flex-grow: 1;
@@ -10,9 +6,7 @@
 }
 
 .contact-form {
-    /* background-color: rgba(255, 165, 0, 0.3); */
-    /* background-color: rgba(220, 182, 11, 0.9); */
-    background-color: rgba(221, 203, 132, 0.5);
+    background-color: rgba(221, 203, 132, 0.7);
     border-radius: 70px;
     display: flex;
     flex-direction: column;
@@ -29,13 +23,13 @@
 }
 
 .contact-form h1, legend {
-    color: #383636;
+    color: var( --website-color-grey);
 }
 
 .contact-input {
     border: none;
     border-radius: 15px;
-    color: #383636;
+    color: var( --website-color-grey);
     height: 35px;
     margin-bottom: 15px;
     padding-left: 8px;
@@ -46,9 +40,9 @@
 }
 
 .contact-input::placeholder {
-    color: #383636;
+    color: var( --website-color-grey);
     font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: var(--letter-spacing);
 }
 
 .contact-input:hover {
@@ -66,19 +60,24 @@
 
 .contact-name {
     font-family: var(--font-family);
-    letter-spacing: 2px;
-    width: 48%;
+    letter-spacing: var(--letter-spacing);
+    width: calc(50% - 4px * 2);
+}
+
+.contact-email {
+    font-family: var(--font-family);
+    letter-spacing: var(--letter-spacing);
 }
 
 .contact-input-area {
     height: 150px;
     font-family: var(--font-family);
-    letter-spacing: 2px;
+    letter-spacing: var(--letter-spacing);
     width: 100%;
 }
 
 fieldset {
-    border: 2px solid #bd4e84;
+    border: 2px solid var(--website-color-pink);
     border-radius: 15px;
     font-weight: bold;
     text-align: center;
@@ -90,7 +89,7 @@ fieldset {
 }
 
 .language-form label{
-    background-color: #FFF5E1;
+    background-color: var(--website-color-beige);
     border-radius: 15px;
     color: #3a3335;
     flex-grow: 1;
@@ -99,28 +98,28 @@ fieldset {
 }
 
 .language-form label:hover {
-    color: #bd4e84;
+    color: var(--website-color-pink);
 }
 
 input[type=radio] {
-    accent-color: #bd4e84;
+    accent-color: var(--website-color-pink);
 }
 
 .submit-button {
-    background-color: #FFF5E1;
+    background-color: var(--website-color-beige);
     border: none;
     border-radius: 15px;
     color: #3a3335;
     font-weight: 700;
     height: 35px;
-    letter-spacing: 2px;
+    letter-spacing: var(--letter-spacing);
     margin-top: 20px;
 }
 
 .submit-button:hover {
-    background-color: #bd4e84;
+    background-color: var(--website-color-pink);
     border: none;
-    color: var(--main-font-color);
+    color: var(--website-color-beige);
     font-weight: 700;
 }
 

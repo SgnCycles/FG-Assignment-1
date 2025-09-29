@@ -1,6 +1,6 @@
 .main-content-about {
     align-items: center;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px);
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -9,8 +9,6 @@
 
 .about-us-section {
     align-items: center;
-    /* background-color: rgba(255, 165, 0, 0.3); */
-    /* background-color: rgba(220, 182, 11, 0.9); */
     background-color: rgba(192, 177, 117, 0.5);
     color: #34282c;
     display: flex;
@@ -19,14 +17,10 @@
 }
 
 .about-us-content {
-    letter-spacing: 2px;
+    letter-spacing: var(--letter-spacing);
     line-height: 170%;
     padding-right: 30px;
 }
-
-/* .about-us-content h1 {
-    color: #bd4e84;
-} */
 
 .about-us-content:nth-child(even) {
     padding-left: 50px;
