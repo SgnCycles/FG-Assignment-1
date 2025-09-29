@@ -1,0 +1,135 @@
+.event-main-content {
+    align-items: center;
+    backdrop-filter: blur(4px);
+    color: #383636;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 24px 0;
+}
+
+.event-grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template: repeat(3, 200px) / repeat(4, 1fr);
+    grid-template-areas: 
+    "image image event-name event-name"
+    "image image description description"
+    "time location entry tickets"
+    ;
+    height: 100%;
+    width: 80%;
+}
+
+.event-image-container {
+    grid-area: image;
+}
+
+.event-image-container img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.event-header {
+    align-items: center;
+    background-color: var(--main-font-color);
+    grid-area: event-name;
+    display: flex;
+    justify-content: center;
+}
+
+.event-description {
+    background-color: var(--main-font-color);
+    grid-area: description;
+    padding: 0 5px;
+}
+
+.event-description h2 {
+    text-align: center;
+}
+
+.event-description p {
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.event-time {
+    grid-area: time;    
+}
+
+span {
+    font-weight: 700;
+}
+
+.event-time, .event-location, .event-entry {
+    align-items: right;
+    background-color: var(--main-font-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.event-location {
+    grid-area: location;
+}
+
+.event-entry {
+    grid-area: entry;
+}
+
+.read-more {
+    align-items: center;
+    background-color: var(--main-font-color);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    grid-area: tickets;
+    justify-content: center;
+}
+
+.read-more a{
+    background-color: #bd4e84;
+    border-radius: 30px;
+    color: var(--main-font-color);
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.read-more a:hover{
+    background-color: #2B2020;
+    color: var(--main-font-color);
+}
+
+@media (min-width: 340px) and (max-width: 1024px) {
+    .event-grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        margin: 10px 0;
+    }
+
+    p {
+       margin: 5px 0; 
+    }
+
+    .event-time, .event-location, .event-entry {
+        padding-left: 11px;
+        padding-bottom: 10px;
+    }
+
+    .event-description p {
+        padding-left: 5px;
+    }
+
+    .read-more {
+        background-color: transparent;
+        flex-direction: row;
+        margin-top: 15px;
+    }
+}

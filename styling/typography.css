@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "Funnel Sans";
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    src: url(../fonts/funnelSans/FunnelSans-Bold.woff2) format("woff2"),
+    url(../fonts/funnelSans/FunnelSans-Bold.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Funnel Sans";
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: url(../fonts/funnelSans/FunnelSans-Light.woff2) format("woff2"),
+    url(../fonts/funnelSans/FunnelSans-Light.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Funnel Sans";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url(../fonts/funnelSans/FunnelSans-Medium.woff2) format("woff2"),
+    url(../fonts/funnelSans/FunnelSans-Medium.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Funnel Sans";
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url(../fonts/funnelSans/FunnelSans-Regular.woff2) format("woff2"),
+    url(../fonts/funnelSans/FunnelSans-Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Funnel Sans";
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src: url(../fonts/funnelSans/FunnelSans-SemiBold.woff2) format("woff2"),
+    url(../fonts/funnelSans/FunnelSans-SemiBold.woff) format("woff");
+}
+
