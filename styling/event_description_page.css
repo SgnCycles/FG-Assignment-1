@@ -92,6 +92,8 @@ span {
 }
 
 .read-more a{
+    width: 130px;
+    text-align: center;
     background-color: var(--website-color-pink);
     border-radius: 30px;
     color: var(--website-color-beige);
